@@ -1,0 +1,16 @@
+#loveLetter #rtImage {
+  width: 150px; /* or set a fixed width like '400px' */
+  border-radius: 20px;
+  margin-top: 10px;
+  height: 100%;
+}
+#loveLetter {
+  color: rgb(30, 29, 29);
+  background-color: rgb(200, 196, 196);
+  
+}
+#click {
+  color: rgb(0, 0, 0);
+  background-color: rgb(195, 191, 191);
+
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="gift.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dobie & Garo ❤️</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        text-align: center;
+        background-color: #f7f7f7;
+        margin: 20px;
+        overflow: hidden;
+      }
+
+      #loveLetter {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+        margin: 0 auto;
+        opacity: 0;
+        animation: fadeIn 2s forwards; /* Animation effect */
+      }
+
+      .heart-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: -1;
+      }
+
+      .heart {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        color: red; /* Customize the color if needed */
+        transform: rotate(-45deg);
+        opacity: 0;
+        animation: fall 5s infinite;
+      }
+
+      #loveLetter img {
+        width: 100%;
+        border-radius: 10px;
+        margin-top: 20px;
+      }
+
+      @keyframes fadeIn {
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes fall {
+        0% {
+          opacity: 1;
+        }
+        100% {
+          transform: translateY(100vh);
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="loveLetter">
+      <h2>For Hager ❤️</h2>
+      <p>🎈❤️‍🔥🎂 Happy birthday 🎂❤️‍🔥🎈</p>
+      <p>❤️</p>
+      <p>
+        This is special day cuz my pookie had born in it i love you so much and
+        happy birthday❤️ until 100 years (with me not anyone else) ❤️thx for
+        being in my life thank you for every thing you gave me the smile again
+        and bring back the child inside me thank you from my heart ❤️ and i wish
+        all happy good things to you (me) and be good Year ❤️i love you so much
+        Hager❤️ and happy birthday❤️ You are The best❤️
+      </p>
+      <p>
+        You are the only one i want to spend all my life with not anybody else❤️
+        <br />
+        You are my Forever Love❤️
+      </p>
+      <p>Forever yours<br />dobie❤️</p>
+
+      <!-- Placeholder for a photo -->
+      <!-- Placeholder for a photo -->
+      <img id="rtImage" src="rt.jpg" alt="Your Girlfriend" />
+      <img id="rtImage" src="gtt.jpg" alt="Your Girlfriend" />
+      <img id="rtImage" src="grtg.jpg" alt="Your Girlfriend" />
+    </div>
+
+    <div class="heart-container" id="heartContainer"></div>
+
+    <script>
+      // Replace placeholders with personalized content
+      document.getElementById("loveLetter").innerHTML = document
+        .getElementById("loveLetter")
+        .innerHTML.replace("BBH", "Your Girlfriend's Name")
+        .replace("[adjective]", "amazing")
+        .replace("[memory]", "date")
+        .replace("[quality]", "kindness")
+        .replace("[title]", "partner")
+        .replace("[Your Name]", "Your Name");
+
+      // Create heart elements and append them to the heart container
+      const heartContainer = document.getElementById("heartContainer");
+      for (let i = 0; i < 50; i++) {
+        const heart = document.createElement("div");
+        heart.className = "heart";
+        heart.innerHTML = "❤️"; // You can customize the heart icon
+        heart.style.left = Math.random() * 100 + "vw";
+        heart.style.animationDuration = Math.random() * 5 + 5 + "s"; // Adjust the animation duration
+        heartContainer.appendChild(heart);
+      }
+    </script>
+    <button id="click" onclick="showAlert()">don't click</button>
+    <a href="flower.html">❤️</a>
+  </body>
+  <script src="gift.js"></script>
+</html>
